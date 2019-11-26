@@ -15,10 +15,10 @@ bin_dir="${buildpack_dir}/bin"
 resources_dir="${buildpack_dir}/resources"
 modules_dir="${resources_dir}/modules"
 
-pipzip="https://pypi.python.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz#md5=35f01da33009719497f01a4ba69d63c9"
-pipurl="https://pypi.python.org/pypi/pip"
-setuptoolszip="https://pypi.python.org/packages/a9/23/720c7558ba6ad3e0f5ad01e0d6ea2288b486da32f053c73e259f7c392042/setuptools-36.0.1.zip#md5=430eb106788183eefe9f444a300007f0"
-setuptoolsurl="https://pypi.python.org/pypi/setuptools"
+pipzip="https://files.pythonhosted.org/packages/ce/ea/9b445176a65ae4ba22dce1d93e4b5fe182f953df71a145f557cffaffc1bf/pip-19.3.1.tar.gz#md5=1aaaf90fbafc50e7ba1e66ffceb00960"
+pipurl="https://pypi.org/project/pip/"
+setuptoolszip="https://files.pythonhosted.org/packages/ab/41/ab6ae1937191de0c9cbc115d0e91e335f268aa1cd85524c86e5970fdb68a/setuptools-42.0.0.zip#md5=0b79291e2781b707f5bc325b745b9c3c"
+setuptoolsurl="https://pypi.org/project/setuptools/"
 
 mkdir -p ${buildpack_dir}
 
