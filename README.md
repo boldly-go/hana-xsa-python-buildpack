@@ -137,6 +137,8 @@ Python 2.7.13 (last known version in the Python2 series)
 
 Python 3.6.2 (current stable version) as of 2017-09-07
 
+Python 3.7.5 (current stable version) as of 2019-11-26 (Tested on HANA 1.0 SPS 12 Release 122.23)
+
 
 If you require a different python version, specifiy it in the python/runtime.txt file as described in the configuration section.
 
