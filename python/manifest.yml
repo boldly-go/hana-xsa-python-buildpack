@@ -5,4 +5,4 @@ applications:
   disk_quota: 256MB
   random-route: true
   buildpack: sap_python_buildpack
-  command: python hello.py
+  command: .buildpack/bin/python3.7 hello.py
