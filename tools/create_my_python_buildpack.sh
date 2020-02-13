@@ -358,6 +358,31 @@ EOFRELEASE
 
 chmod 755 ${buildpack_dir}/bin/release
 
+echo "Creating bin/finalize"
+cat > ${buildpack_dir}/bin/finalize <<- "EOFRELEASE"
+#!/usr/bin/env bash
+set -euo pipefail
+
+BUILD_DIR=$1
+#CACHE_DIR=$2
+#DEPS_DIR=$3
+#DEPS_IDX=$4
+#PROFILE_DIR=${5:-}
+
+#export BUILDPACK_DIR=`dirname $(readlink -f ${BASH_SOURCE%/*})`
+#source "$BUILDPACK_DIR/scripts/install_go.sh"
+#output_dir=$(mktemp -d -t finalizeXXX)
+
+echo "-----> Running go build finalize"
+#pushd $BUILDPACK_DIR
+#    $GoInstallDir/go/bin/go build -mod=vendor -o $output_dir/finalize ./src/python/finalize/cli
+#popd
+echo "Build"
+#$output_dir/finalize "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" "$DEPS_IDX" "$PROFILE_DIR"
+EOFRELEASE
+
+chmod 755 ${buildpack_dir}/bin/finalize
+
 echo "Creating resources/env.sh"
 cat > ${buildpack_dir}/resources/env.sh <<- "EOFENVSH"
 #!/usr/bin/env bash
